@@ -1,0 +1,357 @@
+{
+  "context": {
+    "domain": "ONDC:SRV14",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "on_status",
+    "version": "2.0.0",
+    "bap_id": "mock.ondc.org/api",
+    "bap_uri": "https://mock.ondc.org/api/services/bap",
+    "bpp_id": "qualityapi.rootsgoods.com",
+    "bpp_uri": "https://qualityapi.rootsgoods.com",
+    "transaction_id": "088221f9-55eb-470a-8f50-39988712f763",
+    "message_id": "77e0573e-c6ff-4b34-9f0e-f68d795d6994",
+    "timestamp": "2025-11-18T09:44:26.770620Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "425dcd19-964b-4a09-be48-c6b5633d4b59",
+      "status": "Completed",
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "I1",
+          "location_ids": [
+            "L1"
+          ],
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          }
+        }
+      ],
+      "billing": {
+        "name": "ONDC buyer",
+        "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
+        "state": {
+          "name": "Karnataka"
+        },
+        "city": {
+          "name": "Bengaluru"
+        },
+        "tax_id": "XXXXXXXXXXXXXXX",
+        "email": "nobody@nomail.com",
+        "phone": "9886098860"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "state": {
+            "descriptor": {
+              "code": "REPORT_SHARED"
+            }
+          },
+          "type": "Seller-Fulfilled",
+          "tracking": false,
+          "stops": [
+            {
+              "type": "start",
+              "location": {
+                "id": "L1",
+                "descriptor": {
+                  "name": "RootsGoods Quality Analysis Lab"
+                },
+                "gps": "12.967555,77.749666"
+              },
+              "time": {
+                "range": {
+                  "start": "2025-11-18T07:44:26.770649Z",
+                  "end": "2025-11-18T08:44:26.770657Z"
+                },
+                "timestamp": "2025-11-18T07:44:26.770661Z"
+              },
+              "contact": {
+                "phone": "9483004926",
+                "email": "hegdekudgi@rootsgoods.com"
+              },
+              "person": {
+                "name": "Quality Analyst"
+              }
+            },
+            {
+              "type": "end",
+              "location": {
+                "gps": "12.974002,77.613458",
+                "address": "Digital Service - Certificate Delivered",
+                "city": {
+                  "name": "Bengaluru"
+                },
+                "country": {
+                  "code": "IND"
+                },
+                "area_code": "560001",
+                "state": {
+                  "name": "Karnataka"
+                }
+              },
+              "contact": {
+                "phone": "9886098860",
+                "email": "nobody@nomail.com"
+              },
+              "time": {
+                "label": "confirmed",
+                "range": {
+                  "start": "2025-11-18T09:14:26.770668Z",
+                  "end": "2025-11-18T09:44:26.770620Z"
+                },
+                "timestamp": "2025-11-18T09:44:26.770620Z"
+              },
+              "person": {
+                "name": "ONDC buyer"
+              },
+              "instructions": {
+                "name": "Quality Analysis Complete",
+                "short_desc": "Your maize quality analysis certificate is ready and has been shared with you"
+              },
+              "authorization": {
+                "type": "DIGITAL_CERTIFICATE",
+                "token": "CERT_425dcd19-964b-4a09-be48-c6b5633d4b59",
+                "valid_from": "2025-11-18T09:14:26.770674Z",
+                "valid_to": "2026-11-18T09:44:26.770677Z",
+                "status": "valid"
+              }
+            }
+          ],
+          "rateable": true
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "500"
+        },
+        "breakup": [
+          {
+            "title": "Maize Quality Analysis Certificate",
+            "price": {
+              "currency": "INR",
+              "value": "500"
+            },
+            "item": {
+              "id": "I1",
+              "quantity": {
+                "selected": {
+                  "count": 1
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "500"
+              }
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "item"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "item": {
+              "id": "I1"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "tax"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "discount",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "item": {
+              "id": "I1"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "discount"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "service_charge",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "item": {
+              "id": "I1"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "misc"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payments": [
+        {
+          "id": "P1",
+          "collected_by": "BAP",
+          "params": {
+            "amount": "500",
+            "currency": "INR",
+            "bank_account_number": "159000200001703",
+            "virtual_payment_address": "paytmqr5gw1ix@ptys"
+          },
+          "status": "PAID",
+          "type": "PRE-FULFILLMENT",
+          "tags": [
+            {
+              "descriptor": {
+                "code": "Settlement_Details"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "Counterparty"
+                  },
+                  "value": "BPP"
+                },
+                {
+                  "descriptor": {
+                    "code": "Mode"
+                  },
+                  "value": "UPI"
+                },
+                {
+                  "descriptor": {
+                    "code": "Beneficiary_Name"
+                  },
+                  "value": "RootsGoods Private Limited"
+                },
+                {
+                  "descriptor": {
+                    "code": "Bank_Account_No"
+                  },
+                  "value": "159000200001703"
+                },
+                {
+                  "descriptor": {
+                    "code": "Ifsc_Code"
+                  },
+                  "value": "FDRL0001590"
+                },
+                {
+                  "descriptor": {
+                    "code": "UPI_Address"
+                  },
+                  "value": "paytmqr5gw1ix@ptys"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "Buyer_Finder_Fee"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "Buyer_Finder_Fee_Type"
+                  },
+                  "value": "percentage"
+                },
+                {
+                  "descriptor": {
+                    "code": "Buyer_Finder_Fee_Amount"
+                  },
+                  "value": "0"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "documents": [
+        {
+          "url": "https://qualityapi.rootsgoods.com/certificate/425dcd19-964b-4a09-be48-c6b5633d4b59",
+          "label": "QUALITY_CERTIFICATE"
+        },
+        {
+          "url": "https://qualityapi.rootsgoods.com/report/425dcd19-964b-4a09-be48-c6b5633d4b59",
+          "label": "ANALYSIS_REPORT"
+        },
+        {
+          "url": "https://qualityapi.rootsgoods.com/invoice/425dcd19-964b-4a09-be48-c6b5633d4b59",
+          "label": "INVOICE"
+        }
+      ],
+      "created_at": "2025-11-18T09:44:21.035263Z",
+      "updated_at": "2025-11-18T09:44:26.770620Z"
+    }
+  }
+}
