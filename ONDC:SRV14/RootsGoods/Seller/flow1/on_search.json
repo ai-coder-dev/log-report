@@ -15,9 +15,9 @@
     "bap_uri": "https://mock.ondc.org/api/services/bap",
     "bpp_id": "qualityapi.rootsgoods.com",
     "bpp_uri": "https://qualityapi.rootsgoods.com",
-    "transaction_id": "088221f9-55eb-470a-8f50-39988712f763",
-    "message_id": "59aefbc6-af52-4f62-a708-fa3efb311b42",
-    "timestamp": "2025-11-18T09:44:06.179554Z",
+    "transaction_id": "d58ba1d2-46fb-47e7-9f35-8c9ff8de5779",
+    "message_id": "45a46352-5c0c-475c-a015-efb148418597",
+    "timestamp": "2025-11-19T08:58:45.621935Z",
     "ttl": "PT30S"
   },
   "message": {
@@ -158,10 +158,18 @@
                 "value": "500.00",
                 "minimum_value": "500.00"
               },
-              "category_ids": ["C1"],
-              "fulfillment_ids": ["1"],
-              "location_ids": ["L1"],
-              "payment_ids": ["1"],
+              "category_ids": [
+                "C1"
+              ],
+              "fulfillment_ids": [
+                "1"
+              ],
+              "location_ids": [
+                "L1"
+              ],
+              "payment_ids": [
+                "1"
+              ],
               "cancellation_terms": [
                 {
                   "fulfillment_state": {
@@ -244,8 +252,8 @@
               "time": {
                 "label": "validity",
                 "range": {
-                  "start": "2025-11-18T09:44:06.179631Z",
-                  "end": "2025-12-18T09:44:06.179636Z"
+                  "start": "2025-11-19T08:58:45.622020Z",
+                  "end": "2025-12-19T08:58:45.622024Z"
                 }
               },
               "matched": true,

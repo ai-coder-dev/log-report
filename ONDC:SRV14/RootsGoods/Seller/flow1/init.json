@@ -1,0 +1,145 @@
+{
+  "context": {
+    "domain": "ONDC:SRV14",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "init",
+    "version": "2.0.0",
+    "bap_id": "mock.ondc.org/api",
+    "bap_uri": "https://mock.ondc.org/api/services/bap",
+    "bpp_id": "qualityapi.rootsgoods.com",
+    "bpp_uri": "https://qualityapi.rootsgoods.com",
+    "transaction_id": "d58ba1d2-46fb-47e7-9f35-8c9ff8de5779",
+    "message_id": "02ba743d-4c9d-4703-9c44-932b4b176209",
+    "timestamp": "2025-11-19T09:03:00.726Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "cb223e63-71c1-463e-a2c5-c387234667c1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_ids": [
+            "F1"
+          ],
+          "xinput": {
+            "required": true,
+            "form": {
+              "id": "form_1",
+              "url": "https://qualityapi.rootsgoods.com/server/upload",
+              "mime_type": "text/html"
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "REPORT_REQUIREMENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "REPORT_DEADLINE"
+                  },
+                  "value": "2025-11-19T11:01:19.261734Z"
+                },
+                {
+                  "descriptor": {
+                    "code": "CROP"
+                  },
+                  "value": "MAIZE"
+                },
+                {
+                  "descriptor": {
+                    "code": "DATE_OF_SOWING"
+                  },
+                  "value": "2025-08-21T09:01:19.261746Z"
+                },
+                {
+                  "descriptor": {
+                    "code": "FARM_STATUS"
+                  },
+                  "value": "IRRIGATED"
+                },
+                {
+                  "descriptor": {
+                    "code": "ACRAGE"
+                  },
+                  "value": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "billing": {
+        "name": "ONDC buyer",
+        "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
+        "state": {
+          "name": "Karnataka"
+        },
+        "city": {
+          "name": "Bengaluru"
+        },
+        "tax_id": "XXXXXXXXXXXXXXX",
+        "email": "nobody@nomail.com",
+        "phone": "9886098860"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Seller-Fulfilled",
+          "stops": [
+            {
+              "type": "end",
+              "location": {
+                "gps": "12.974002,77.613458",
+                "address": "My House #, My buildin",
+                "city": {
+                  "name": "Bengaluru"
+                },
+                "country": {
+                  "code": "IND"
+                },
+                "area_code": "560001",
+                "state": {
+                  "name": "Karnataka"
+                }
+              },
+              "time": {
+                "label": "confirmed",
+                "range": {
+                  "start": "2025-11-19T10:01:19.261764Z",
+                  "end": "2025-11-19T11:01:19.261770Z"
+                },
+                "days": "4"
+              },
+              "contact": {
+                "phone": "9886098860"
+              }
+            }
+          ]
+        }
+      ],
+      "payments": [
+        {
+          "type": "PRE-FULFILLMENT",
+          "collected_by": "BAP"
+        }
+      ]
+    }
+  }
+}

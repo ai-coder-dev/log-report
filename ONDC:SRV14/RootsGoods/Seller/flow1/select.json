@@ -1,0 +1,85 @@
+{
+  "context": {
+    "domain": "ONDC:SRV14",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "select",
+    "version": "2.0.0",
+    "bap_id": "mock.ondc.org/api",
+    "bap_uri": "https://mock.ondc.org/api/services/bap",
+    "bpp_id": "qualityapi.rootsgoods.com",
+    "bpp_uri": "https://qualityapi.rootsgoods.com",
+    "transaction_id": "d58ba1d2-46fb-47e7-9f35-8c9ff8de5779",
+    "message_id": "41f428f1-b830-4a58-8085-a6572988bdb5",
+    "timestamp": "2025-11-19T09:01:19.207Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "I1",
+          "location_ids": [
+            "L1"
+          ],
+          "category_ids": [
+            "C1"
+          ],
+          "fulfillment_ids": [
+            "1"
+          ],
+          "price": {
+            "currency": "INR",
+            "value": "500.00",
+            "minimum_value": "500.00"
+          },
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "type": "Seller-Fulfilled",
+          "stops": [
+            {
+              "type": "end",
+              "location": {
+                "gps": "12.974002,77.613458",
+                "area_code": "560001"
+              },
+              "time": {
+                "label": "selected",
+                "range": {
+                  "start": "2025-11-19T09:01:19.207Z",
+                  "end": "2025-11-19T09:01:19.207Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "payments": [
+        {
+          "type": "PRE-FULFILLMENT"
+        }
+      ]
+    }
+  }
+}

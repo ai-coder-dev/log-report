@@ -15,9 +15,9 @@
     "bap_uri": "https://mock.ondc.org/api/services/bap",
     "bpp_id": "qualityapi.rootsgoods.com",
     "bpp_uri": "https://qualityapi.rootsgoods.com",
-    "transaction_id": "088221f9-55eb-470a-8f50-39988712f763",
-    "message_id": "2171e87c-9d59-4e88-992e-f1a6a3e6e39f",
-    "timestamp": "2025-11-18T09:44:11.950671Z",
+    "transaction_id": "d58ba1d2-46fb-47e7-9f35-8c9ff8de5779",
+    "message_id": "41f428f1-b830-4a58-8085-a6572988bdb5",
+    "timestamp": "2025-11-19T09:01:19.261708Z",
     "ttl": "PT30S"
   },
   "message": {
@@ -33,8 +33,12 @@
       "items": [
         {
           "id": "I1",
-          "location_ids": ["L1"],
-          "fulfillment_ids": ["F1"],
+          "location_ids": [
+            "L1"
+          ],
+          "fulfillment_ids": [
+            "F1"
+          ],
           "xinput": {
             "required": true,
             "form": {
@@ -53,7 +57,7 @@
                   "descriptor": {
                     "code": "REPORT_DEADLINE"
                   },
-                  "value": "2025-11-18T11:44:11.950695Z"
+                  "value": "2025-11-19T11:01:19.261734Z"
                 },
                 {
                   "descriptor": {
@@ -65,7 +69,7 @@
                   "descriptor": {
                     "code": "DATE_OF_SOWING"
                   },
-                  "value": "2025-08-20T09:44:11.950705Z"
+                  "value": "2025-08-21T09:01:19.261746Z"
                 },
                 {
                   "descriptor": {
@@ -104,8 +108,8 @@
               "time": {
                 "label": "confirmed",
                 "range": {
-                  "start": "2025-11-18T10:44:11.950717Z",
-                  "end": "2025-11-18T11:44:11.950722Z"
+                  "start": "2025-11-19T10:01:19.261764Z",
+                  "end": "2025-11-19T11:01:19.261770Z"
                 }
               }
             }
