@@ -15,34 +15,123 @@
     "bap_uri": "https://mock.ondc.org/api/services/bap",
     "bpp_id": "qualityapi.rootsgoods.com",
     "bpp_uri": "https://qualityapi.rootsgoods.com",
-    "transaction_id": "d58ba1d2-46fb-47e7-9f35-8c9ff8de5779",
-    "message_id": "0fa3e350-4cfa-4082-b68e-08cd5b33a086",
-    "timestamp": "2025-11-19T09:07:46.086373Z",
+    "transaction_id": "8e28158b-7f5d-4b8d-80f9-658ddde2552d",
+    "message_id": "f0a21dce-5f8b-48ba-aa3e-b567d9fd8cf0",
+    "timestamp": "2025-11-25T09:05:17.786894Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "d7f5d1bf-4445-41a7-be27-88481d3eb7a5",
+      "id": "3bf26ee9-2c7a-4200-9d15-5ca57dd6c0ed",
       "status": "Completed",
       "provider": {
-        "id": "P1",
+        "id": "550e8400-e29b-41d4-a716-446655440001",
         "locations": [
           {
-            "id": "L1"
+            "id": "550e8400-e29b-41d4-a716-446655440003"
           }
         ]
       },
       "items": [
         {
-          "id": "I1",
+          "id": "550e8400-e29b-41d4-a716-446655440002",
           "location_ids": [
-            "L1"
+            "550e8400-e29b-41d4-a716-446655440003"
+          ],
+          "fulfillment_ids": [
+            "550e8400-e29b-41d4-a716-446655440004"
           ],
           "quantity": {
             "selected": {
               "count": 1
             }
-          }
+          },
+          "xinput": {
+            "form": {
+              "id": "form_1"
+            },
+            "form_response": {
+              "status": "SUCCESS",
+              "submission_id": "430542a3-c19f-41a4-bf42-aef51e4d797a"
+            }
+          },
+          "cancellation_terms": [
+            {
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "PENDING"
+                }
+              },
+              "cancellation_fee": {
+                "percentage": "0.00"
+              }
+            },
+            {
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "IN_PROGRESS"
+                }
+              },
+              "cancellation_fee": {
+                "percentage": "50.00"
+              }
+            },
+            {
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "COMPLETED"
+                }
+              },
+              "cancellation_fee": {
+                "percentage": "100.00"
+              }
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "REPORT_REQUIREMENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "REPORT_DEADLINE"
+                  },
+                  "value": "2025-11-25T11:05:17.786954Z"
+                },
+                {
+                  "descriptor": {
+                    "code": "CROP"
+                  },
+                  "value": "MAIZE"
+                },
+                {
+                  "descriptor": {
+                    "code": "ANALYSIS_TYPE"
+                  },
+                  "value": "QUALITY_ANALYSIS"
+                },
+                {
+                  "descriptor": {
+                    "code": "DATE_OF_SOWING"
+                  },
+                  "value": "2025-08-27T09:05:17.786964Z"
+                },
+                {
+                  "descriptor": {
+                    "code": "FARM_STATUS"
+                  },
+                  "value": "IRRIGATED"
+                },
+                {
+                  "descriptor": {
+                    "code": "ACRAGE"
+                  },
+                  "value": "1"
+                }
+              ]
+            }
+          ]
         }
       ],
       "billing": {
@@ -60,7 +149,7 @@
       },
       "fulfillments": [
         {
-          "id": "F1",
+          "id": "550e8400-e29b-41d4-a716-446655440004",
           "state": {
             "descriptor": {
               "code": "REPORT_SHARED"
@@ -72,7 +161,7 @@
             {
               "type": "start",
               "location": {
-                "id": "L1",
+                "id": "550e8400-e29b-41d4-a716-446655440003",
                 "descriptor": {
                   "name": "RootsGoods Quality Analysis Lab"
                 },
@@ -80,10 +169,10 @@
               },
               "time": {
                 "range": {
-                  "start": "2025-11-19T07:07:46.086404Z",
-                  "end": "2025-11-19T08:07:46.086415Z"
+                  "start": "2025-11-25T07:05:17.786976Z",
+                  "end": "2025-11-25T08:05:17.786979Z"
                 },
-                "timestamp": "2025-11-19T07:07:46.086420Z"
+                "timestamp": "2025-11-25T07:05:17.786983Z"
               },
               "contact": {
                 "phone": "9483004926",
@@ -116,10 +205,10 @@
               "time": {
                 "label": "confirmed",
                 "range": {
-                  "start": "2025-11-19T08:37:46.086429Z",
-                  "end": "2025-11-19T09:07:46.086373Z"
+                  "start": "2025-11-25T08:35:17.786990Z",
+                  "end": "2025-11-25T09:05:17.786894Z"
                 },
-                "timestamp": "2025-11-19T09:07:46.086373Z"
+                "timestamp": "2025-11-25T09:05:17.786894Z"
               },
               "person": {
                 "name": "ONDC buyer"
@@ -130,9 +219,9 @@
               },
               "authorization": {
                 "type": "DIGITAL_CERTIFICATE",
-                "token": "CERT_d7f5d1bf-4445-41a7-be27-88481d3eb7a5",
-                "valid_from": "2025-11-19T08:37:46.086436Z",
-                "valid_to": "2026-11-19T09:07:46.086440Z",
+                "token": "CERT_3bf26ee9-2c7a-4200-9d15-5ca57dd6c0ed",
+                "valid_from": "2025-11-25T08:35:17.786995Z",
+                "valid_to": "2026-11-25T09:05:17.786998Z",
                 "status": "valid"
               }
             }
@@ -153,7 +242,7 @@
               "value": "500"
             },
             "item": {
-              "id": "I1",
+              "id": "550e8400-e29b-41d4-a716-446655440002",
               "quantity": {
                 "selected": {
                   "count": 1
@@ -187,7 +276,7 @@
               "value": "0"
             },
             "item": {
-              "id": "I1"
+              "id": "550e8400-e29b-41d4-a716-446655440002"
             },
             "tags": [
               {
@@ -212,7 +301,7 @@
               "value": "0"
             },
             "item": {
-              "id": "I1"
+              "id": "550e8400-e29b-41d4-a716-446655440002"
             },
             "tags": [
               {
@@ -229,38 +318,13 @@
                 ]
               }
             ]
-          },
-          {
-            "title": "service_charge",
-            "price": {
-              "currency": "INR",
-              "value": "0"
-            },
-            "item": {
-              "id": "I1"
-            },
-            "tags": [
-              {
-                "descriptor": {
-                  "code": "title"
-                },
-                "list": [
-                  {
-                    "descriptor": {
-                      "code": "type"
-                    },
-                    "value": "misc"
-                  }
-                ]
-              }
-            ]
           }
         ],
         "ttl": "P1D"
       },
       "payments": [
         {
-          "id": "P1",
+          "id": "550e8400-e29b-41d4-a716-446655440005",
           "collected_by": "BAP",
           "params": {
             "amount": "500",
@@ -338,20 +402,20 @@
       ],
       "documents": [
         {
-          "url": "https://qualityapi.rootsgoods.com/certificate/d7f5d1bf-4445-41a7-be27-88481d3eb7a5",
+          "url": "https://qualityapi.rootsgoods.com/certificate/3bf26ee9-2c7a-4200-9d15-5ca57dd6c0ed",
           "label": "QUALITY_CERTIFICATE"
         },
         {
-          "url": "https://qualityapi.rootsgoods.com/report/d7f5d1bf-4445-41a7-be27-88481d3eb7a5",
+          "url": "https://qualityapi.rootsgoods.com/report/3bf26ee9-2c7a-4200-9d15-5ca57dd6c0ed",
           "label": "ANALYSIS_REPORT"
         },
         {
-          "url": "https://qualityapi.rootsgoods.com/invoice/d7f5d1bf-4445-41a7-be27-88481d3eb7a5",
+          "url": "https://qualityapi.rootsgoods.com/invoice/3bf26ee9-2c7a-4200-9d15-5ca57dd6c0ed",
           "label": "INVOICE"
         }
       ],
-      "created_at": "2025-11-19T09:05:11.260508Z",
-      "updated_at": "2025-11-19T09:07:46.086373Z"
+      "created_at": "2025-11-25T09:02:47.722034Z",
+      "updated_at": "2025-11-25T09:05:17.786894Z"
     }
   }
 }

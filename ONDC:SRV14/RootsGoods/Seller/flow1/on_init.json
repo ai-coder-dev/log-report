@@ -15,29 +15,29 @@
     "bap_uri": "https://mock.ondc.org/api/services/bap",
     "bpp_id": "qualityapi.rootsgoods.com",
     "bpp_uri": "https://qualityapi.rootsgoods.com",
-    "transaction_id": "d58ba1d2-46fb-47e7-9f35-8c9ff8de5779",
-    "message_id": "02ba743d-4c9d-4703-9c44-932b4b176209",
-    "timestamp": "2025-11-19T09:03:00.781784Z",
+    "transaction_id": "8e28158b-7f5d-4b8d-80f9-658ddde2552d",
+    "message_id": "26a57e1d-d562-4bf5-a8f9-ad76a8f20cda",
+    "timestamp": "2025-11-25T09:01:07.257040Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "provider": {
-        "id": "P1",
+        "id": "550e8400-e29b-41d4-a716-446655440001",
         "locations": [
           {
-            "id": "L1"
+            "id": "550e8400-e29b-41d4-a716-446655440003"
           }
         ]
       },
       "items": [
         {
-          "id": "I1",
+          "id": "550e8400-e29b-41d4-a716-446655440002",
           "location_ids": [
-            "L1"
+            "550e8400-e29b-41d4-a716-446655440003"
           ],
           "fulfillment_ids": [
-            "F1"
+            "550e8400-e29b-41d4-a716-446655440004"
           ],
           "xinput": {
             "form": {
@@ -58,7 +58,7 @@
                   "descriptor": {
                     "code": "REPORT_DEADLINE"
                   },
-                  "value": "2025-11-19T11:01:19.261734Z"
+                  "value": "2025-11-25T10:59:27.814523Z"
                 },
                 {
                   "descriptor": {
@@ -70,7 +70,7 @@
                   "descriptor": {
                     "code": "DATE_OF_SOWING"
                   },
-                  "value": "2025-08-21T09:01:19.261746Z"
+                  "value": "2025-08-27T08:59:27.814534Z"
                 },
                 {
                   "descriptor": {
@@ -104,7 +104,7 @@
       },
       "fulfillments": [
         {
-          "id": "F1",
+          "id": "550e8400-e29b-41d4-a716-446655440004",
           "type": "Seller-Fulfilled",
           "tracking": false,
           "stops": [
@@ -130,8 +130,8 @@
               "time": {
                 "label": "confirmed",
                 "range": {
-                  "start": "2025-11-19T10:01:19.261764Z",
-                  "end": "2025-11-19T11:01:19.261770Z"
+                  "start": "2025-11-25T09:59:27.814547Z",
+                  "end": "2025-11-25T10:59:27.814552Z"
                 }
               }
             }
@@ -151,7 +151,7 @@
               "value": "500"
             },
             "item": {
-              "id": "I1",
+              "id": "550e8400-e29b-41d4-a716-446655440002",
               "quantity": {
                 "selected": {
                   "count": 1
@@ -185,7 +185,7 @@
               "value": "0"
             },
             "item": {
-              "id": "I1"
+              "id": "550e8400-e29b-41d4-a716-446655440002"
             },
             "tags": [
               {
@@ -210,7 +210,7 @@
               "value": "0"
             },
             "item": {
-              "id": "I1"
+              "id": "550e8400-e29b-41d4-a716-446655440002"
             },
             "tags": [
               {
@@ -227,38 +227,13 @@
                 ]
               }
             ]
-          },
-          {
-            "title": "pickup_charge",
-            "price": {
-              "currency": "INR",
-              "value": "149"
-            },
-            "item": {
-              "id": "I1"
-            },
-            "tags": [
-              {
-                "descriptor": {
-                  "code": "title"
-                },
-                "list": [
-                  {
-                    "descriptor": {
-                      "code": "type"
-                    },
-                    "value": "misc"
-                  }
-                ]
-              }
-            ]
           }
         ],
         "ttl": "P1D"
       },
       "payments": [
         {
-          "id": "P1",
+          "id": "550e8400-e29b-41d4-a716-446655440005",
           "collected_by": "BAP",
           "params": {
             "amount": "500",

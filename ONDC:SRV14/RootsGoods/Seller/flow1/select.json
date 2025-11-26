@@ -15,32 +15,32 @@
     "bap_uri": "https://mock.ondc.org/api/services/bap",
     "bpp_id": "qualityapi.rootsgoods.com",
     "bpp_uri": "https://qualityapi.rootsgoods.com",
-    "transaction_id": "d58ba1d2-46fb-47e7-9f35-8c9ff8de5779",
-    "message_id": "41f428f1-b830-4a58-8085-a6572988bdb5",
-    "timestamp": "2025-11-19T09:01:19.207Z",
+    "transaction_id": "8e28158b-7f5d-4b8d-80f9-658ddde2552d",
+    "message_id": "fcfa6b67-aa21-48c8-af00-dcabfd13aada",
+    "timestamp": "2025-11-25T08:59:27.772Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "provider": {
-        "id": "P1",
+        "id": "550e8400-e29b-41d4-a716-446655440001",
         "locations": [
           {
-            "id": "L1"
+            "id": "550e8400-e29b-41d4-a716-446655440003"
           }
         ]
       },
       "items": [
         {
-          "id": "I1",
+          "id": "550e8400-e29b-41d4-a716-446655440002",
           "location_ids": [
-            "L1"
+            "550e8400-e29b-41d4-a716-446655440003"
           ],
           "category_ids": [
-            "C1"
+            "SRV14-1005"
           ],
           "fulfillment_ids": [
-            "1"
+            "550e8400-e29b-41d4-a716-446655440004"
           ],
           "price": {
             "currency": "INR",
@@ -67,8 +67,8 @@
               "time": {
                 "label": "selected",
                 "range": {
-                  "start": "2025-11-19T09:01:19.207Z",
-                  "end": "2025-11-19T09:01:19.207Z"
+                  "start": "2025-11-25T08:59:27.772Z",
+                  "end": "2025-11-25T08:59:27.772Z"
                 }
               }
             }

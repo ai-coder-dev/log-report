@@ -15,32 +15,32 @@
     "bap_uri": "https://mock.ondc.org/api/services/bap",
     "bpp_id": "qualityapi.rootsgoods.com",
     "bpp_uri": "https://qualityapi.rootsgoods.com",
-    "transaction_id": "d58ba1d2-46fb-47e7-9f35-8c9ff8de5779",
-    "message_id": "dc04a2c2-9389-4d19-9487-f94269a86a55",
-    "timestamp": "2025-11-19T09:05:11.260508Z",
+    "transaction_id": "8e28158b-7f5d-4b8d-80f9-658ddde2552d",
+    "message_id": "8cc29d3f-53e4-45bb-a403-279be45fa35d",
+    "timestamp": "2025-11-25T09:02:47.722034Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
-      "id": "d7f5d1bf-4445-41a7-be27-88481d3eb7a5",
+      "id": "3bf26ee9-2c7a-4200-9d15-5ca57dd6c0ed",
       "status": "Accepted",
       "provider": {
-        "id": "P1",
+        "id": "550e8400-e29b-41d4-a716-446655440001",
         "locations": [
           {
-            "id": "L1"
+            "id": "550e8400-e29b-41d4-a716-446655440003"
           }
         ],
         "rateable": true
       },
       "items": [
         {
-          "id": "I1",
+          "id": "550e8400-e29b-41d4-a716-446655440002",
           "location_ids": [
-            "L1"
+            "550e8400-e29b-41d4-a716-446655440003"
           ],
           "fulfillment_ids": [
-            "F1"
+            "550e8400-e29b-41d4-a716-446655440004"
           ],
           "quantity": {
             "selected": {
@@ -53,7 +53,7 @@
             },
             "form_response": {
               "status": "SUCCESS",
-              "submission_id": "6547-7456-7235-4386"
+              "submission_id": "35cfb7d7-8922-45e1-bfe0-0c5aac6a3837"
             }
           },
           "cancellation_terms": [
@@ -70,11 +70,21 @@
             {
               "fulfillment_state": {
                 "descriptor": {
-                  "code": "IN_TRANSIT"
+                  "code": "IN_PROGRESS"
                 }
               },
               "cancellation_fee": {
-                "percentage": "10.00"
+                "percentage": "50.00"
+              }
+            },
+            {
+              "fulfillment_state": {
+                "descriptor": {
+                  "code": "COMPLETED"
+                }
+              },
+              "cancellation_fee": {
+                "percentage": "100.00"
               }
             }
           ],
@@ -88,7 +98,7 @@
                   "descriptor": {
                     "code": "REPORT_DEADLINE"
                   },
-                  "value": "2025-11-19T11:01:19.261734Z"
+                  "value": "2025-11-25T10:59:27.814523Z"
                 },
                 {
                   "descriptor": {
@@ -106,7 +116,7 @@
                   "descriptor": {
                     "code": "DATE_OF_SOWING"
                   },
-                  "value": "2025-08-21T09:01:19.261746Z"
+                  "value": "2025-08-27T08:59:27.814534Z"
                 },
                 {
                   "descriptor": {
@@ -140,7 +150,7 @@
       },
       "fulfillments": [
         {
-          "id": "F1",
+          "id": "550e8400-e29b-41d4-a716-446655440004",
           "state": {
             "descriptor": {
               "code": "Pending"
@@ -152,7 +162,7 @@
             {
               "type": "start",
               "location": {
-                "id": "L1",
+                "id": "550e8400-e29b-41d4-a716-446655440003",
                 "descriptor": {
                   "name": "RootsGoods Quality Analysis Lab"
                 },
@@ -160,8 +170,8 @@
               },
               "time": {
                 "range": {
-                  "start": "2025-11-19T09:35:11.260586Z",
-                  "end": "2025-11-19T10:05:11.260592Z"
+                  "start": "2025-11-25T09:32:47.722135Z",
+                  "end": "2025-11-25T10:02:47.722140Z"
                 }
               },
               "contact": {
@@ -195,8 +205,8 @@
               "time": {
                 "label": "confirmed",
                 "range": {
-                  "start": "2025-11-19T11:01:19.261734Z",
-                  "end": "2025-11-19T11:05:11.260609Z"
+                  "start": "2025-11-25T10:59:27.814523Z",
+                  "end": "2025-11-25T11:02:47.722162Z"
                 }
               },
               "person": {
@@ -208,9 +218,9 @@
               },
               "authorization": {
                 "type": "UPLOAD_FORM",
-                "token": "a36dd7e9-c0b8-4394-8567-87254e4b9ca0",
-                "valid_from": "2025-11-19T09:05:11.260508Z",
-                "valid_to": "2025-11-19T11:01:19.261734Z",
+                "token": "35cfb7d7-8922-45e1-bfe0-0c5aac6a3837",
+                "valid_from": "2025-11-25T09:02:47.722034Z",
+                "valid_to": "2025-11-25T10:59:27.814523Z",
                 "status": "valid"
               }
             }
@@ -231,7 +241,7 @@
               "value": "500"
             },
             "item": {
-              "id": "I1",
+              "id": "550e8400-e29b-41d4-a716-446655440002",
               "quantity": {
                 "selected": {
                   "count": 1
@@ -265,7 +275,7 @@
               "value": "0"
             },
             "item": {
-              "id": "I1"
+              "id": "550e8400-e29b-41d4-a716-446655440002"
             },
             "tags": [
               {
@@ -290,7 +300,7 @@
               "value": "0"
             },
             "item": {
-              "id": "I1"
+              "id": "550e8400-e29b-41d4-a716-446655440002"
             },
             "tags": [
               {
@@ -307,38 +317,13 @@
                 ]
               }
             ]
-          },
-          {
-            "title": "service_charge",
-            "price": {
-              "currency": "INR",
-              "value": "0"
-            },
-            "item": {
-              "id": "I1"
-            },
-            "tags": [
-              {
-                "descriptor": {
-                  "code": "title"
-                },
-                "list": [
-                  {
-                    "descriptor": {
-                      "code": "type"
-                    },
-                    "value": "misc"
-                  }
-                ]
-              }
-            ]
           }
         ],
         "ttl": "P1D"
       },
       "payments": [
         {
-          "id": "P1",
+          "id": "550e8400-e29b-41d4-a716-446655440005",
           "collected_by": "BAP",
           "params": {
             "amount": "500",
@@ -491,13 +476,13 @@
           }
         }
       ],
-      "created_at": "2025-11-19T09:05:10.817Z",
-      "updated_at": "2025-11-19T09:05:11.260508Z",
+      "created_at": "2025-11-25T09:02:47.531Z",
+      "updated_at": "2025-11-25T09:02:47.722034Z",
       "xinput": {
         "form": {
           "url": "https://qualityapi.rootsgoods.com/server/upload",
           "mimetype": "text/html",
-          "submission_id": "a36dd7e9-c0b8-4394-8567-87254e4b9ca0",
+          "submission_id": "35cfb7d7-8922-45e1-bfe0-0c5aac6a3837",
           "status": "SUCCESS"
         }
       }

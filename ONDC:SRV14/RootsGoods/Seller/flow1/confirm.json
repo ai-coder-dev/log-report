@@ -15,15 +15,15 @@
     "bap_uri": "https://mock.ondc.org/api/services/bap",
     "bpp_id": "qualityapi.rootsgoods.com",
     "bpp_uri": "https://qualityapi.rootsgoods.com",
-    "transaction_id": "d58ba1d2-46fb-47e7-9f35-8c9ff8de5779",
-    "message_id": "dc04a2c2-9389-4d19-9487-f94269a86a55",
-    "timestamp": "2025-11-19T09:05:10.817Z",
+    "transaction_id": "8e28158b-7f5d-4b8d-80f9-658ddde2552d",
+    "message_id": "8cc29d3f-53e4-45bb-a403-279be45fa35d",
+    "timestamp": "2025-11-25T09:02:47.531Z",
     "ttl": "PT30S"
   },
   "message": {
     "order": {
       "provider": {
-        "id": "P1",
+        "id": "550e8400-e29b-41d4-a716-446655440001",
         "locations": [
           {
             "id": "L1"
@@ -32,12 +32,12 @@
       },
       "items": [
         {
-          "id": "I1",
+          "id": "550e8400-e29b-41d4-a716-446655440002",
           "location_ids": [
-            "L1"
+            "550e8400-e29b-41d4-a716-446655440003"
           ],
           "fulfillment_ids": [
-            "F1"
+            "550e8400-e29b-41d4-a716-446655440004"
           ],
           "xinput": {
             "form": {
@@ -58,7 +58,7 @@
                   "descriptor": {
                     "code": "REPORT_DEADLINE"
                   },
-                  "value": "2025-11-19T11:01:19.261734Z"
+                  "value": "2025-11-25T10:59:27.814523Z"
                 },
                 {
                   "descriptor": {
@@ -70,7 +70,7 @@
                   "descriptor": {
                     "code": "DATE_OF_SOWING"
                   },
-                  "value": "2025-08-21T09:01:19.261746Z"
+                  "value": "2025-08-27T08:59:27.814534Z"
                 },
                 {
                   "descriptor": {
@@ -104,7 +104,7 @@
       },
       "fulfillments": [
         {
-          "id": "F1",
+          "id": "550e8400-e29b-41d4-a716-446655440004",
           "type": "Seller-Fulfilled",
           "tracking": false,
           "stops": [
@@ -131,8 +131,8 @@
               "time": {
                 "label": "confirmed",
                 "range": {
-                  "start": "2025-11-19T10:01:19.261764Z",
-                  "end": "2025-11-19T11:01:19.261770Z"
+                  "start": "2025-11-25T09:59:27.814547Z",
+                  "end": "2025-11-25T10:59:27.814552Z"
                 }
               },
               "person": {
@@ -155,7 +155,7 @@
               "value": "500"
             },
             "item": {
-              "id": "I1",
+              "id": "550e8400-e29b-41d4-a716-446655440002",
               "quantity": {
                 "selected": {
                   "count": 1
@@ -189,7 +189,7 @@
               "value": "0"
             },
             "item": {
-              "id": "I1"
+              "id": "550e8400-e29b-41d4-a716-446655440002"
             },
             "tags": [
               {
@@ -214,7 +214,7 @@
               "value": "0"
             },
             "item": {
-              "id": "I1"
+              "id": "550e8400-e29b-41d4-a716-446655440002"
             },
             "tags": [
               {
@@ -231,45 +231,20 @@
                 ]
               }
             ]
-          },
-          {
-            "title": "pickup_charge",
-            "price": {
-              "currency": "INR",
-              "value": "149"
-            },
-            "item": {
-              "id": "I1"
-            },
-            "tags": [
-              {
-                "descriptor": {
-                  "code": "title"
-                },
-                "list": [
-                  {
-                    "descriptor": {
-                      "code": "type"
-                    },
-                    "value": "misc"
-                  }
-                ]
-              }
-            ]
           }
         ],
         "ttl": "P1D"
       },
       "payments": [
         {
-          "id": "P1",
+          "id": "550e8400-e29b-41d4-a716-446655440005",
           "collected_by": "BAP",
           "params": {
             "amount": "500",
             "currency": "INR",
             "bank_account_number": "159000200001703",
             "virtual_payment_address": "paytmqr5gw1ix@ptys",
-            "transaction_id": "5a8751a8-0930-4078-a2e8-c1d6950534af"
+            "transaction_id": "cd0d8d6d-0bc8-4977-8734-b3628428cd14"
           },
           "type": "PRE-FULFILLMENT",
           "tags": [
@@ -340,7 +315,7 @@
         },
         {
           "params": {
-            "transaction_id": "08c9c54a-8655-4f55-b0fe-dff4f408dcf1"
+            "transaction_id": "a76005bc-a2ae-4bf4-bfec-95a0b9f3939b"
           },
           "status": "NOT-PAID"
         }
@@ -349,15 +324,15 @@
         "form": {
           "url": "https://qualityapi.rootsgoods.com/server/upload",
           "mimetype": "text/html",
-          "submission_id": "24d733e1-8964-44ab-a389-68044585a818",
+          "submission_id": "430542a3-c19f-41a4-bf42-aef51e4d797a",
           "status": "SUCCESS"
         },
         "required": false
       },
-      "id": "d7f5d1bf-4445-41a7-be27-88481d3eb7a5",
+      "id": "3bf26ee9-2c7a-4200-9d15-5ca57dd6c0ed",
       "status": "Created",
-      "created_at": "2025-11-19T09:05:10.817Z",
-      "updated_at": "2025-11-19T09:05:10.817Z"
+      "created_at": "2025-11-25T09:02:47.531Z",
+      "updated_at": "2025-11-25T09:02:47.531Z"
     }
   }
 }

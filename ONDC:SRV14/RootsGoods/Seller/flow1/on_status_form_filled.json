@@ -9,15 +9,15 @@
         "code": "IND"
       }
     },
-    "action": "on_select",
+    "action": "on_status",
     "version": "2.0.0",
     "bap_id": "mock.ondc.org/api",
     "bap_uri": "https://mock.ondc.org/api/services/bap",
     "bpp_id": "qualityapi.rootsgoods.com",
     "bpp_uri": "https://qualityapi.rootsgoods.com",
-    "transaction_id": "8e28158b-7f5d-4b8d-80f9-658ddde2552d",
-    "message_id": "fcfa6b67-aa21-48c8-af00-dcabfd13aada",
-    "timestamp": "2025-11-25T08:59:27.814501Z",
+    "transaction_id": "21b05f05-d216-4159-b302-59193a8ce223",
+    "message_id": "7922e235-3562-4c91-adaf-614c452b97d9",
+    "timestamp": "2025-11-26T09:25:00.353015Z",
     "ttl": "PT30S"
   },
   "message": {
@@ -40,11 +40,12 @@
             "550e8400-e29b-41d4-a716-446655440004"
           ],
           "xinput": {
-            "required": true,
             "form": {
-              "id": "form_1",
-              "url": "https://qualityapi.rootsgoods.com/server/upload",
-              "mime_type": "text/html"
+              "id": "form_1"
+            },
+            "form_response": {
+              "status": "SUCCESS",
+              "submission_id": "5a2e6402-f2f5-48bd-b807-6bbbd8d8394c"
             }
           },
           "tags": [
@@ -57,7 +58,7 @@
                   "descriptor": {
                     "code": "REPORT_DEADLINE"
                   },
-                  "value": "2025-11-25T10:59:27.814523Z"
+                  "value": "2025-11-26T11:25:00.353050Z"
                 },
                 {
                   "descriptor": {
@@ -69,19 +70,19 @@
                   "descriptor": {
                     "code": "DATE_OF_SOWING"
                   },
-                  "value": "2025-08-27T08:59:27.814534Z"
+                  "value": "2025-11-26T11:25:00.353057Z"
                 },
                 {
                   "descriptor": {
                     "code": "FARM_STATUS"
                   },
-                  "value": "IRRIGATED"
+                  "value": "RAIN_FED"
                 },
                 {
                   "descriptor": {
                     "code": "ACRAGE"
                   },
-                  "value": "1"
+                  "value": "2"
                 }
               ]
             }
@@ -108,14 +109,73 @@
               "time": {
                 "label": "confirmed",
                 "range": {
-                  "start": "2025-11-25T09:59:27.814547Z",
-                  "end": "2025-11-25T10:59:27.814552Z"
+                  "start": "2025-11-26T10:25:00.353062Z",
+                  "end": "2025-11-26T11:25:00.353064Z"
                 }
               }
             }
           ]
         }
       ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "500.00"
+        },
+        "breakup": [
+          {
+            "title": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "item": {
+              "id": "550e8400-e29b-41d4-a716-446655440002"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "tax"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "discount",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "item": {
+              "id": "550e8400-e29b-41d4-a716-446655440002"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "discount"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "ttl": "P1D"
+      },
       "payments": [
         {
           "type": "PRE-FULFILLMENT",

@@ -13,9 +13,9 @@
     "version": "2.0.0",
     "bap_id": "mock.ondc.org/api",
     "bap_uri": "https://mock.ondc.org/api/services/bap",
-    "transaction_id": "d58ba1d2-46fb-47e7-9f35-8c9ff8de5779",
-    "message_id": "45a46352-5c0c-475c-a015-efb148418597",
-    "timestamp": "2025-11-19T08:58:45.247Z",
+    "transaction_id": "8e28158b-7f5d-4b8d-80f9-658ddde2552d",
+    "message_id": "2f564f43-47e4-4de8-8750-6c6935066cef",
+    "timestamp": "2025-11-25T08:56:47.262Z",
     "ttl": "PT30S",
     "bpp_uri": "https://qualityapi.rootsgoods.com"
   },

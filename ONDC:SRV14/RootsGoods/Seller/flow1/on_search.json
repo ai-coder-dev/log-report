@@ -15,22 +15,22 @@
     "bap_uri": "https://mock.ondc.org/api/services/bap",
     "bpp_id": "qualityapi.rootsgoods.com",
     "bpp_uri": "https://qualityapi.rootsgoods.com",
-    "transaction_id": "d58ba1d2-46fb-47e7-9f35-8c9ff8de5779",
-    "message_id": "45a46352-5c0c-475c-a015-efb148418597",
-    "timestamp": "2025-11-19T08:58:45.621935Z",
+    "transaction_id": "8e28158b-7f5d-4b8d-80f9-658ddde2552d",
+    "message_id": "2f564f43-47e4-4de8-8750-6c6935066cef",
+    "timestamp": "2025-11-25T08:56:47.687647Z",
     "ttl": "PT30S"
   },
   "message": {
     "catalog": {
       "fulfillments": [
         {
-          "id": "1",
+          "id": "550e8400-e29b-41d4-a716-446655440004",
           "type": "Seller-Fulfilled"
         }
       ],
       "payments": [
         {
-          "id": "1",
+          "id": "550e8400-e29b-41d4-a716-446655440005",
           "type": "PRE-FULFILLMENT"
         }
       ],
@@ -46,7 +46,7 @@
       },
       "providers": [
         {
-          "id": "P1",
+          "id": "550e8400-e29b-41d4-a716-446655440001",
           "descriptor": {
             "name": "RootsGoods",
             "code": "MAIZE_AI_001",
@@ -62,7 +62,7 @@
           "ttl": "PT1D",
           "locations": [
             {
-              "id": "L1",
+              "id": "550e8400-e29b-41d4-a716-446655440003",
               "gps": "12.967555,77.749666",
               "address": "Jayanagar 4th Block, Bengaluru",
               "city": {
@@ -96,13 +96,13 @@
                   "descriptor": {
                     "code": "location"
                   },
-                  "value": "L1"
+                  "value": "550e8400-e29b-41d4-a716-446655440003"
                 },
                 {
                   "descriptor": {
                     "code": "category"
                   },
-                  "value": "SRV14-*"
+                  "value": "SRV14-1005"
                 },
                 {
                   "descriptor": {
@@ -114,7 +114,7 @@
                   "descriptor": {
                     "code": "val"
                   },
-                  "value": "PAN_INDIA"
+                  "value": "IND"
                 },
                 {
                   "descriptor": {
@@ -125,22 +125,13 @@
               ]
             }
           ],
-          "categories": [
-            {
-              "id": "C1",
-              "descriptor": {
-                "name": "Quality Analysis Certificate",
-                "code": "QUALITY_ANALYSIS"
-              }
-            }
-          ],
           "items": [
             {
-              "id": "I1",
+              "id": "550e8400-e29b-41d4-a716-446655440002",
               "descriptor": {
-                "name": "Maize Quality Analysis Certificate",
-                "short_desc": "AI-powered maize quality analysis with digital certificate",
-                "long_desc": "Farmers upload images of their harvested maize and our AI system analyzes quality parameters including grain size, color, fungal infection, foreign materials, and moisture content to generate a comprehensive digital quality certificate.",
+                "name": "Maize Quality Analysis - Complete Package",
+                "short_desc": "Comprehensive AI-powered maize quality analysis with digital certificate",
+                "long_desc": "Complete maize quality analysis package: Upload images of your harvested maize and receive a comprehensive quality analysis covering grain size, color classification, fungal infection detection (black and white fungus), foreign materials identification, broken grain assessment, and moisture content evaluation. Includes a professional digital quality certificate.",
                 "images": [
                   {
                     "url": "https://rootsgoods.com/wp-content/uploads/2022/10/5.jpg"
@@ -159,16 +150,16 @@
                 "minimum_value": "500.00"
               },
               "category_ids": [
-                "C1"
+                "SRV14-1005"
               ],
               "fulfillment_ids": [
-                "1"
+                "550e8400-e29b-41d4-a716-446655440004"
               ],
               "location_ids": [
-                "L1"
+                "550e8400-e29b-41d4-a716-446655440003"
               ],
               "payment_ids": [
-                "1"
+                "550e8400-e29b-41d4-a716-446655440005"
               ],
               "cancellation_terms": [
                 {
@@ -219,7 +210,7 @@
                       "descriptor": {
                         "code": "SERVICE_TYPE"
                       },
-                      "value": "DIGITAL_ANALYSIS"
+                      "value": "electronic"
                     }
                   ]
                 },
@@ -252,8 +243,8 @@
               "time": {
                 "label": "validity",
                 "range": {
-                  "start": "2025-11-19T08:58:45.622020Z",
-                  "end": "2025-12-19T08:58:45.622024Z"
+                  "start": "2025-11-25T08:56:47.687721Z",
+                  "end": "2025-12-25T08:56:47.687725Z"
                 }
               },
               "matched": true,
