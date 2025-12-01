@@ -15,12 +15,12 @@
     "bap_uri": "https://mock.ondc.org/api/services/bap",
     "bpp_id": "qualityapi.rootsgoods.com",
     "bpp_uri": "https://qualityapi.rootsgoods.com",
-    "transaction_id": "8e28158b-7f5d-4b8d-80f9-658ddde2552d",
-    "message_id": "f0a21dce-5f8b-48ba-aa3e-b567d9fd8cf0",
-    "timestamp": "2025-11-25T09:05:16.743Z",
+    "transaction_id": "cfaf63b9-3d37-4f7b-9b0f-fb4d8c1e3d0c",
+    "message_id": "eaedfc26-941b-47fc-b784-3e71c0ab0e35",
+    "timestamp": "2025-12-01T16:48:11.002Z",
     "ttl": "PT30S"
   },
   "message": {
-    "order_id": "3bf26ee9-2c7a-4200-9d15-5ca57dd6c0ed"
+    "order_id": "56b748ae-bd8d-44f7-bddb-ab68ea96f4a1"
   }
 }

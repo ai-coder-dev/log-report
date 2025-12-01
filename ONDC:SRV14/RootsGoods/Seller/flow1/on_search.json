@@ -15,9 +15,9 @@
     "bap_uri": "https://mock.ondc.org/api/services/bap",
     "bpp_id": "qualityapi.rootsgoods.com",
     "bpp_uri": "https://qualityapi.rootsgoods.com",
-    "transaction_id": "8e28158b-7f5d-4b8d-80f9-658ddde2552d",
-    "message_id": "2f564f43-47e4-4de8-8750-6c6935066cef",
-    "timestamp": "2025-11-25T08:56:47.687647Z",
+    "transaction_id": "cfaf63b9-3d37-4f7b-9b0f-fb4d8c1e3d0c",
+    "message_id": "28b7e8cc-8b7b-4447-ac05-6a8b55809495",
+    "timestamp": "2025-12-01T16:39:06.485Z",
     "ttl": "PT30S"
   },
   "message": {
@@ -78,14 +78,6 @@
               "area_code": "560076"
             }
           ],
-          "creds": [
-            {
-              "id": "RG-AI-2024",
-              "type": "Certificate",
-              "desc": "AI Quality Analysis Certification",
-              "url": "https://rootsgoods.com/certifications"
-            }
-          ],
           "tags": [
             {
               "descriptor": {
@@ -135,12 +127,6 @@
                 "images": [
                   {
                     "url": "https://rootsgoods.com/wp-content/uploads/2022/10/5.jpg"
-                  }
-                ],
-                "media": [
-                  {
-                    "mimetype": "video/mp4",
-                    "url": "https://rootsgoods.com/demo-video.mp4"
                   }
                 ]
               },
@@ -243,8 +229,8 @@
               "time": {
                 "label": "validity",
                 "range": {
-                  "start": "2025-11-25T08:56:47.687721Z",
-                  "end": "2025-12-25T08:56:47.687725Z"
+                  "start": "2025-12-01T16:39:06.485Z",
+                  "end": "2025-12-31T16:39:06.485Z"
                 }
               },
               "matched": true,
