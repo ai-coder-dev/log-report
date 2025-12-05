@@ -1,0 +1,85 @@
+{
+  "context": {
+    "domain": "ONDC:SRV14",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "select",
+    "version": "2.0.0",
+    "bap_id": "mock.ondc.org/api",
+    "bap_uri": "https://mock.ondc.org/api/services/bap",
+    "bpp_id": "qualityapi.rootsgoods.com",
+    "bpp_uri": "https://qualityapi.rootsgoods.com",
+    "transaction_id": "af2cdeae-a99e-4558-b9cd-c2622cd67cf1",
+    "message_id": "9d5931ee-8c1b-42d5-b018-875cded49404",
+    "timestamp": "2025-12-05T06:52:40.422Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "550e8400-e29b-41d4-a716-446655440001",
+        "locations": [
+          {
+            "id": "550e8400-e29b-41d4-a716-446655440003"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "550e8400-e29b-41d4-a716-446655440002",
+          "location_ids": [
+            "550e8400-e29b-41d4-a716-446655440003"
+          ],
+          "category_ids": [
+            "SRV14-1005"
+          ],
+          "fulfillment_ids": [
+            "550e8400-e29b-41d4-a716-446655440004"
+          ],
+          "price": {
+            "currency": "INR",
+            "value": "500.00",
+            "minimum_value": "500.00"
+          },
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          }
+        }
+      ],
+      "fulfillments": [
+        {
+          "type": "Seller-Fulfilled",
+          "stops": [
+            {
+              "type": "end",
+              "location": {
+                "gps": "12.974002,77.613458",
+                "area_code": "560001"
+              },
+              "time": {
+                "label": "selected",
+                "range": {
+                  "start": "2025-12-05T06:52:40.422Z",
+                  "end": "2025-12-05T06:52:40.422Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "payments": [
+        {
+          "type": "PRE-FULFILLMENT"
+        }
+      ]
+    }
+  }
+}

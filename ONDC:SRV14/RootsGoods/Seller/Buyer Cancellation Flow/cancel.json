@@ -1,0 +1,27 @@
+{
+  "context": {
+    "domain": "ONDC:SRV14",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "cancel",
+    "version": "2.0.0",
+    "bap_id": "mock.ondc.org/api",
+    "bap_uri": "https://mock.ondc.org/api/services/bap",
+    "bpp_id": "qualityapi.rootsgoods.com",
+    "bpp_uri": "https://qualityapi.rootsgoods.com",
+    "transaction_id": "af2cdeae-a99e-4558-b9cd-c2622cd67cf1",
+    "message_id": "feb9e0c6-f5a7-4251-b148-f9d445a932f3",
+    "timestamp": "2025-12-05T07:02:33.107Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order_id": "ca0c738a-56cc-44ef-adef-1b65c543706f",
+    "cancellation_reason_id": "001"
+  }
+}

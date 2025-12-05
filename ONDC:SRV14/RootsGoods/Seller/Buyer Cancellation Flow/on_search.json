@@ -1,0 +1,252 @@
+{
+  "context": {
+    "domain": "ONDC:SRV14",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "on_search",
+    "version": "2.0.0",
+    "bap_id": "mock.ondc.org/api",
+    "bap_uri": "https://mock.ondc.org/api/services/bap",
+    "bpp_id": "qualityapi.rootsgoods.com",
+    "bpp_uri": "https://qualityapi.rootsgoods.com",
+    "transaction_id": "af2cdeae-a99e-4558-b9cd-c2622cd67cf1",
+    "message_id": "d2802e5e-2ed7-4e74-92f1-ddac47173dab",
+    "timestamp": "2025-12-05T06:50:33.468Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "catalog": {
+      "fulfillments": [
+        {
+          "id": "550e8400-e29b-41d4-a716-446655440004",
+          "type": "Seller-Fulfilled"
+        }
+      ],
+      "payments": [
+        {
+          "id": "550e8400-e29b-41d4-a716-446655440005",
+          "type": "PRE-FULFILLMENT"
+        }
+      ],
+      "descriptor": {
+        "name": "RootsGoods Quality Analysis Services",
+        "short_desc": "AI-powered crop quality analysis and certification services",
+        "long_desc": "Professional agricultural quality analysis using AI technology to provide digital certificates for crop quality assessment",
+        "images": [
+          {
+            "url": "https://rootsgoods.com/wp-content/uploads/2022/10/Logo.png"
+          }
+        ]
+      },
+      "providers": [
+        {
+          "id": "550e8400-e29b-41d4-a716-446655440001",
+          "descriptor": {
+            "name": "RootsGoods",
+            "code": "MAIZE_AI_001",
+            "short_desc": "AI-powered maize quality analysis service provider",
+            "long_desc": "Farmers can upload images of their harvested maize through our platform. Using AI-based analysis, we assess key quality parameters such as grain size, color, fungal infection, foreign materials, and moisture content. Based on this quality analysis, a comprehensive evaluation is provided, and a digital quality certificate is generated.",
+            "images": [
+              {
+                "url": "https://rootsgoods.com/wp-content/uploads/2022/10/Logo.png"
+              }
+            ]
+          },
+          "rating": "4.8",
+          "ttl": "PT1D",
+          "locations": [
+            {
+              "id": "550e8400-e29b-41d4-a716-446655440003",
+              "gps": "12.967555,77.749666",
+              "address": "Jayanagar 4th Block, Bengaluru",
+              "city": {
+                "code": "std:080",
+                "name": "Bengaluru"
+              },
+              "state": {
+                "code": "KA"
+              },
+              "country": {
+                "code": "IND"
+              },
+              "area_code": "560076"
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "serviceability"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "location"
+                  },
+                  "value": "550e8400-e29b-41d4-a716-446655440003"
+                },
+                {
+                  "descriptor": {
+                    "code": "category"
+                  },
+                  "value": "SRV14-1005"
+                },
+                {
+                  "descriptor": {
+                    "code": "type"
+                  },
+                  "value": "13"
+                },
+                {
+                  "descriptor": {
+                    "code": "val"
+                  },
+                  "value": "IND"
+                },
+                {
+                  "descriptor": {
+                    "code": "unit"
+                  },
+                  "value": "country"
+                }
+              ]
+            }
+          ],
+          "items": [
+            {
+              "id": "550e8400-e29b-41d4-a716-446655440002",
+              "descriptor": {
+                "name": "Maize Quality Analysis - Complete Package",
+                "short_desc": "Comprehensive AI-powered maize quality analysis with digital certificate",
+                "long_desc": "Complete maize quality analysis package: Upload images of your harvested maize and receive a comprehensive quality analysis covering grain size, color classification, fungal infection detection (black and white fungus), foreign materials identification, broken grain assessment, and moisture content evaluation. Includes a professional digital quality certificate.",
+                "images": [
+                  {
+                    "url": "https://rootsgoods.com/wp-content/uploads/2022/10/5.jpg"
+                  }
+                ]
+              },
+              "price": {
+                "currency": "INR",
+                "value": "500.00",
+                "minimum_value": "500.00"
+              },
+              "category_ids": [
+                "SRV14-1005"
+              ],
+              "fulfillment_ids": [
+                "550e8400-e29b-41d4-a716-446655440004"
+              ],
+              "location_ids": [
+                "550e8400-e29b-41d4-a716-446655440003"
+              ],
+              "payment_ids": [
+                "550e8400-e29b-41d4-a716-446655440005"
+              ],
+              "cancellation_terms": [
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "PENDING"
+                    }
+                  },
+                  "cancellation_fee": {
+                    "percentage": "0.00"
+                  }
+                },
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "IN_PROGRESS"
+                    }
+                  },
+                  "cancellation_fee": {
+                    "percentage": "50.00"
+                  }
+                },
+                {
+                  "fulfillment_state": {
+                    "descriptor": {
+                      "code": "COMPLETED"
+                    }
+                  },
+                  "cancellation_fee": {
+                    "percentage": "100.00"
+                  }
+                }
+              ],
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "SERVICE_INFORMATION"
+                  },
+                  "display": true,
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "COMPLETION_TAT"
+                      },
+                      "value": "PT30M"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "SERVICE_TYPE"
+                      },
+                      "value": "electronic"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "RESCHEDULE_TERMS"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "FULFILLMENT_STATE"
+                      },
+                      "value": "Pending"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "RESCHEDULE_ELIGIBLE"
+                      },
+                      "value": "false"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "RESCHEDULE_FEE"
+                      },
+                      "value": "0.00"
+                    }
+                  ]
+                }
+              ],
+              "time": {
+                "label": "validity",
+                "range": {
+                  "start": "2025-12-05T06:50:33.468Z",
+                  "end": "2026-01-04T06:50:33.468Z"
+                }
+              },
+              "matched": true,
+              "recommended": true
+            }
+          ],
+          "fulfillments": [
+            {
+              "contact": {
+                "phone": "9483004926",
+                "email": "hegdekudgi@rootsgoods.com"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

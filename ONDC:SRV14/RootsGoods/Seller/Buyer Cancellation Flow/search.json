@@ -1,0 +1,87 @@
+{
+  "context": {
+    "domain": "ONDC:SRV14",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "search",
+    "version": "2.0.0",
+    "bap_id": "mock.ondc.org/api",
+    "bap_uri": "https://mock.ondc.org/api/services/bap",
+    "transaction_id": "af2cdeae-a99e-4558-b9cd-c2622cd67cf1",
+    "message_id": "d2802e5e-2ed7-4e74-92f1-ddac47173dab",
+    "timestamp": "2025-12-05T06:50:23.649Z",
+    "ttl": "PT30S",
+    "bpp_uri": "https://qualityapi.rootsgoods.com"
+  },
+  "message": {
+    "intent": {
+      "item": {
+        "category": {
+          "id": "SRV14-*"
+        }
+      },
+      "fulfillment": {
+        "type": "Seller-Fulfilled",
+        "stops": [
+          {
+            "type": "end",
+            "time": {
+              "range": {
+                "start": "2024-04-04T22:00:00.000Z"
+              }
+            },
+            "location": {
+              "gps": "12.974002,77.613458",
+              "area_code": "560001"
+            }
+          }
+        ]
+      }
+    },
+    "payment": {
+      "type": "PRE-FULFILLMENT",
+      "collected_by": "BAP"
+    },
+    "tags": [
+      {
+        "descriptor": {
+          "code": "BAP_TERMS"
+        },
+        "display": false,
+        "list": [
+          {
+            "descriptor": {
+              "code": "FINDER_FEE_TYPE"
+            },
+            "value": "percent"
+          },
+          {
+            "descriptor": {
+              "code": "FINDER_FEE_AMOUNT"
+            },
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "descriptor": {
+          "code": "BAP_DETAILS"
+        },
+        "list": [
+          {
+            "descriptor": {
+              "code": "BAP_TYPE"
+            },
+            "value": "FARMER"
+          }
+        ]
+      }
+    ]
+  }
+}

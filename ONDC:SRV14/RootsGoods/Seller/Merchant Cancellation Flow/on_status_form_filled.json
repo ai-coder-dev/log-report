@@ -1,0 +1,221 @@
+{
+  "context": {
+    "domain": "ONDC:SRV14",
+    "location": {
+      "city": {
+        "code": "std:080"
+      },
+      "country": {
+        "code": "IND"
+      }
+    },
+    "action": "on_status",
+    "version": "2.0.0",
+    "bap_id": "mock.ondc.org/api",
+    "bap_uri": "https://mock.ondc.org/api/services/bap",
+    "bpp_id": "qualityapi.rootsgoods.com",
+    "bpp_uri": "https://qualityapi.rootsgoods.com",
+    "transaction_id": "44d952c3-4c4e-4607-9aa6-1dcc6ea8a780",
+    "message_id": "60b4518b-b46e-41f6-8685-0053443a25cf",
+    "timestamp": "2025-12-05T07:23:20.608Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "550e8400-e29b-41d4-a716-446655440001",
+        "locations": [
+          {
+            "id": "550e8400-e29b-41d4-a716-446655440003"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "550e8400-e29b-41d4-a716-446655440002",
+          "location_ids": [
+            "550e8400-e29b-41d4-a716-446655440003"
+          ],
+          "fulfillment_ids": [
+            "550e8400-e29b-41d4-a716-446655440004"
+          ],
+          "xinput": {
+            "form": {
+              "id": "form_1"
+            },
+            "form_response": {
+              "status": "SUCCESS",
+              "submission_id": "a3d535fa-a8b3-40e5-882f-7f3138dc4c8f"
+            }
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "REPORT_REQUIREMENT"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "REPORT_DEADLINE"
+                  },
+                  "value": "2025-12-05T09:23:20.608Z"
+                },
+                {
+                  "descriptor": {
+                    "code": "CROP"
+                  },
+                  "value": "MAIZE"
+                },
+                {
+                  "descriptor": {
+                    "code": "DATE_OF_SOWING"
+                  },
+                  "value": "2025-12-05T09:23:20.608Z"
+                },
+                {
+                  "descriptor": {
+                    "code": "FARM_STATUS"
+                  },
+                  "value": "RAIN_FED"
+                },
+                {
+                  "descriptor": {
+                    "code": "ACRAGE"
+                  },
+                  "value": "2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "550e8400-e29b-41d4-a716-446655440004",
+          "type": "Seller-Fulfilled",
+          "tracking": false,
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          },
+          "stops": [
+            {
+              "type": "end",
+              "location": {
+                "gps": "12.974002,77.613458",
+                "area_code": "560001"
+              },
+              "time": {
+                "label": "confirmed",
+                "range": {
+                  "start": "2025-12-05T08:23:20.608Z",
+                  "end": "2025-12-05T09:23:20.608Z"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "500.00"
+        },
+        "breakup": [
+          {
+            "title": "Maize Quality Analysis Certificate",
+            "price": {
+              "currency": "INR",
+              "value": "500"
+            },
+            "item": {
+              "id": "550e8400-e29b-41d4-a716-446655440002",
+              "quantity": {
+                "selected": {
+                  "count": 1
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "500"
+              }
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "item"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "item": {
+              "id": "550e8400-e29b-41d4-a716-446655440002"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "tax"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "discount",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            },
+            "item": {
+              "id": "550e8400-e29b-41d4-a716-446655440002"
+            },
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "title"
+                },
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "type"
+                    },
+                    "value": "discount"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "payments": [
+        {
+          "type": "PRE-FULFILLMENT",
+          "collected_by": "BAP"
+        }
+      ]
+    }
+  }
+}
